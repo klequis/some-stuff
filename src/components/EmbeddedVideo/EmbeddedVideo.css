@@ -1,0 +1,33 @@
+/* Set your aspect ratio */
+.video-container {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 56.25%; /* creates a 16:9 aspect ratio */
+}
+
+.video-container iframe,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+
+/* And set the max-width of the parent element */
+.video-wrap {
+  margin: 0 auto 2rem;
+  width: 100%;
+}
+
+.video-alternate {
+  background-color: inherit;
+  font-size: 90%;
+  font-style: italic;
+  margin: 0 auto 5rem;
+  padding: 0.5rem;
+  text-align: center;
+  width: 100%;
+}
